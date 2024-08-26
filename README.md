@@ -8,6 +8,10 @@ Download dataset from [MvTec website](https://www.mvtec.com/company/research/dat
 # Training
 Train a model:
 ```
+Dataset path is set as deafult in the code as 'STAD/data/' in the below way, so downloaded data has to be stored in this heirarchy.
+
+parser.add_argument("--mvtec-ad", type=str, default='../STAD/data', help="MvTec-AD dataset path")
+``` 
 python main.py train --epochs 400
 ```
 After running this command, a directory `snapshots/` should be created, inside which checkpoint will be saved.
