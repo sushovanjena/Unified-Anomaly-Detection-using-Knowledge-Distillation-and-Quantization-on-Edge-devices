@@ -1,1 +1,1 @@
-# Multi-class-Anomaly-Detection-using-Knowledge-Distillation-and-Quantization
+# Unified-Anomaly-Detection-using-Knowledge-Distillation-and-Quantization
