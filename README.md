@@ -8,7 +8,7 @@ Download dataset from [MvTec website](https://www.mvtec.com/company/research/dat
 # Training
 Train a model:
 ```
-python main.py train --mvtec-ad mvtec_anomaly_detection --epochs 400
+python main.py train --epochs 400
 ```
 After running this command, a directory `snapshots/` should be created, inside which checkpoint will be saved.
 
