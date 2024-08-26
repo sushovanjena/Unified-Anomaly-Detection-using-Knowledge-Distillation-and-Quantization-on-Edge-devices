@@ -5,7 +5,7 @@ Student-Teacher Feature Pyramid Matching - Directory for Training and Testing
 # Dataset
 Download dataset from [MvTec website](https://www.mvtec.com/company/research/datasets/mvtec-ad/).
 
-# Training
+# Training in Pytorch
 Train a model:
 ```
 Dataset path is set as deafult in the code as 'STAD/data/' in the below way, so downloaded data has to be stored in this heirarchy.
@@ -19,10 +19,19 @@ After running this command, a directory `snapshots/` should be created, inside w
 # Testing
 Evaluate a model:
 ```
-python main.py test --checkpoint snapshots/best_394_83.pt
+python main.py test --category carpet --checkpoint snapshots/best_394_83.pt
 
 This command will evaluate the model specified by --checkpoint argument. 
 
+# Post-Training Quantization in PyTorch
+python main_ptq.py test --category carpet --checkpoint snapshots/best_394_83.pt
+
+# Post-Training Quantization (INT-8) in TensorRT
+python TRT_main_STFPM.py test --category carpet --checkpoint snapshots/best_394_83.pt
+
+# Quantization-aware Training (INT-8) in PyTorch
+
+python main_qat.py train --epochs 400
 
 # Citation
 
