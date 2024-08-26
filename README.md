@@ -5,6 +5,9 @@ Student-Teacher Feature Pyramid Matching - Directory for Training and Testing
 # Dataset
 Download dataset from [MvTec website](https://www.mvtec.com/company/research/datasets/mvtec-ad/).
 
+# Environment
+gym_env.yaml
+
 # Training in Pytorch
 Train a model:
 ```
@@ -26,12 +29,18 @@ This command will evaluate the model specified by --checkpoint argument.
 # Post-Training Quantization (INT-8) in PyTorch
 python main_ptq.py test --category carpet --checkpoint snapshots/best_394_83.pt
 
+Note - PyTorch Quantization is not supported in CUDA, so it runs in CPU.
+
 # Post-Training Quantization (INT-8) in TensorRT
 python TRT_main_STFPM.py test --category carpet --checkpoint snapshots/best_394_83.pt
+
+Note - TensorRT Quantization is not supported in CPU, so it tested in NVIDIA Jetson Xavier NX.
 
 # Quantization-aware Training (INT-8) in PyTorch
 
 python main_qat.py train --epochs 400
+
+Note - PyTorch Quantization is not supported in CUDA, so it runs in CPU.
 
 # Citation
 
