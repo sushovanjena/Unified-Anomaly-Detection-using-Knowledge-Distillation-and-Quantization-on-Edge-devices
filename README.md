@@ -23,7 +23,7 @@ python main.py test --category carpet --checkpoint snapshots/best_394_83.pt
 
 This command will evaluate the model specified by --checkpoint argument. 
 
-# Post-Training Quantization in PyTorch
+# Post-Training Quantization (INT-8) in PyTorch
 python main_ptq.py test --category carpet --checkpoint snapshots/best_394_83.pt
 
 # Post-Training Quantization (INT-8) in TensorRT
