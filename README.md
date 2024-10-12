@@ -5,6 +5,8 @@ Student-Teacher Feature Pyramid Matching - Directory for Training and Testing
 # Dataset
 Download dataset from [MvTec website](https://www.mvtec.com/company/research/datasets/mvtec-ad/).
 
+# Checkpoint
+Download checkpoint from https://drive.google.com/file/d/1s4g-ymPedorhmPmlfOFvp_Ls6tJgghEs/view?usp=sharing
 # Environment
 gym_env.yaml
 
