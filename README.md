@@ -1,4 +1,4 @@
-# Unified-Anomaly-Detection-using-Knowledge-Distillation-and-Quantization
+# Unified-Anomaly-Detection-using-Knowledge-Distillation-and-Quantization-on-Edge-devices
 
 ## Unified Student-Teacher Feature Pyramid Matching 
 Student-Teacher Feature Pyramid Matching - Directory for Training and Testing
