@@ -51,7 +51,7 @@ Note - PyTorch Quantization is not supported in CUDA, so it runs in CPU.
 
 # Citation
 
-If you find the work useful in your research, please cite our papar.
+If you find the work useful in your research, please cite our paper.
 ```
 @article{jena2024unified,
   title={Unified Anomaly Detection methods on Edge Device using Knowledge Distillation and Quantization},
